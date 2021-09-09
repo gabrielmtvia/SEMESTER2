@@ -21,6 +21,14 @@ public class MainMethod
     Thread t6 = new Thread(customer4, "customer4");
     Thread t7 = new Thread(customer5, "customer5");
 
+    t1.isDaemon();
+    t2.isDaemon();
+    t3.isDaemon();
+    t4.isDaemon();
+    t5.isDaemon();
+    t6.isDaemon();
+    t7.isDaemon();
+
     t1.start();
     t2.start();
     t3.start();

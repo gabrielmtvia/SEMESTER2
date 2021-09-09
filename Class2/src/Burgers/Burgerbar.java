@@ -14,30 +14,27 @@ public class Burgerbar
 
   public synchronized void makeBurger(String employeeName)
   {
-    if(numberOfBurgers>=maxNumberOfBurgers)
+    while(numberOfBurgers>=maxNumberOfBurgers)
     {
-      try
-      {
+
         System.out.println("Current employee waiting" + Thread.currentThread().getName());
-        wait(1000);
-      }
-      catch (InterruptedException e)
-      {
-        e.printStackTrace();
-      }
+        Thread.currentThread().stop();
+
     }
-    else numberOfBurgers++;
-    System.out.println(employeeName + ": who is ready to eat a burger (" +numberOfBurgers+ " left)");
+     notify();
+      numberOfBurgers++;
+      System.out.println(employeeName + ": who is ready to eat a burger (" +numberOfBurgers+ " left)");
+
   }
 
   public synchronized void eatBurger()
   {
-    if(numberOfBurgers<=0)
+    while(numberOfBurgers<=0)
     {
       try
       {
         System.out.println("Current customer is waiting" + Thread.currentThread().getName());
-        wait(1000);
+        wait();
       }
       catch (InterruptedException e)
       {
@@ -45,12 +42,10 @@ public class Burgerbar
       }
     }
 
-    else
-    {
+    notify();
       System.out.println(
           "Customer eating a burger (" + numberOfBurgers + " left)" + Thread.currentThread().getName());
       numberOfBurgers--;
-    }
   }
 
   public int getNumberOfBurgers()
