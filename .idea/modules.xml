@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Assignment1/Assignment1.iml" filepath="$PROJECT_DIR$/Assignment1/Assignment1.iml" />
       <module fileurl="file://$PROJECT_DIR$/CLASS1/CLASS1.iml" filepath="$PROJECT_DIR$/CLASS1/CLASS1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Class2/Class2.iml" filepath="$PROJECT_DIR$/Class2/Class2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Class3/Class3.iml" filepath="$PROJECT_DIR$/Class3/Class3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Class4/Class4.iml" filepath="$PROJECT_DIR$/Class4/Class4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObserverPattern/ObserverPattern.iml" filepath="$PROJECT_DIR$/ObserverPattern/ObserverPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/SEMESTER2.iml" filepath="$PROJECT_DIR$/SEMESTER2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Temperature/Temperature.iml" filepath="$PROJECT_DIR$/Temperature/Temperature.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UpperCase/UpperCase.iml" filepath="$PROJECT_DIR$/UpperCase/UpperCase.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment1.view.main.TemperatureControlViewController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="104.0" layoutY="92.0" text="Indoor Temp" />
+            <Label layoutX="104.0" layoutY="136.0" text="Outdoor Temp" />
+            <Label layoutX="104.0" layoutY="200.0" text="Radiator Power" />
+            <Button layoutX="362.0" layoutY="178.0" mnemonicParsing="false" onAction="#onPowerUpButton" text="Power Up" />
+            <Button layoutX="354.0" layoutY="217.0" mnemonicParsing="false" onAction="#onPowerDownButton" text="Power Down" />
+            <TextField fx:id="radiatorPowerField" layoutX="193.0" layoutY="196.0" />
+            <TextField fx:id="indoorTempField" layoutX="193.0" layoutY="88.0" />
+            <TextField fx:id="outdoorTempField" layoutX="193.0" layoutY="132.0" />
+            <Label fx:id="errorField" layoutX="104.0" layoutY="296.0" text="Warning! Critical temperature" textFill="RED">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
